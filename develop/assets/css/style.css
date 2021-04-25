@@ -44,17 +44,14 @@
 
 .logo-wrapper{
     width: 100px;
-    height: 100px;
-    transform: rotate(90deg);
-    order:1;
-    border-top: 2px var(--java) solid;
+    height: 98px;
+    border-right: 2px var(--java) solid;
 }
 
 .nav-wrapper {
     justify-content: flex-end;
     color: var(--calypso);
     display: flex;
-    order:5;
     min-width: 50%;
 }
 
@@ -90,27 +87,29 @@ nav ul li a:hover {
 
 .middle-wrapper{
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    border: 1px var(--java) solid;
-    align-items: flex-start;
 }
 
 .header-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    order:10;
     transform: rotate(-180deg);
     justify-content: flex-start;
-    align-content: center;
+    align-content: flex-end;
     writing-mode: vertical-lr;
     width:100px;
+    border: 1px var(--java) solid;
     
 }
 
 header {
-margin: 20px 20px 20px 20px;
+margin: 0 0 50px 20px;
+}
+
+header h1{
+    margin-right: 10px;
 }
 
 header h2{
@@ -120,22 +119,93 @@ header h2{
 
 .main-content {
     display: flex;
-    flex-wrap: no-wrap;
-    order:20;
+    flex-wrap: wrap;
     border-left: 1px var(--atoll) solid;
-    
 }
 
+.card-apps {
+    display: flex;
+    flex-wrap: wrap;
+}
 .menu-card-title {
     display:flex;
-    flex-wrap: wrap;
-    min-width: 40%;
+    flex-direction: column;
+    flex-wrap:wrap;
     border: 1px var(--java) solid;
+    width: 210px;
+}
+
+.menu-card-title h3{
+    display:flex;
+    border-left: 1px var(--java) solid;
+    color: var(--iron);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-card-details {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px var(--java) solid;
+    justify-content: center;
+    align-items: flex-start;
+   }
+
+.menu-card-details img{
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-card-details a{
+    width:210px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    color: var(--iron);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-card-details p{
+    width: 210px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--robins-egg-blue); 
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 155px;
+    padding-right: 250px;
+    border: 1px var(--java) solid;
+}
+
+.detail-content h3{
+    color: var(--iron);
+}
+
+.detail-content img{
+    height: 300px;
+    width: 300px;
+}
+
+.detail-content a, .detail-content p {
+    color: var(--iron);
 }
 
 footer {
     display:flex;
     flex-wrap: wrap;
-    order:100;
-    border: 1px red solid;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border: 2px var(--java) solid;
 }
