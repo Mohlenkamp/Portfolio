@@ -29,9 +29,18 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
+/* This is the global wrapper for the whole page */
+
   .outer-outer-wrapper{
       max-width: 1441px;
   }
+
+/* Note: Separating into 3 areas. Top Middle Footer
+Then, wrapping each twice to get the two tone border
+effects (if possible). */
+
+
+/* Starting Top Section which includes logo and nav */
 
 .top-outer-wrapper{
     border: 1px var(--atoll) solid;
@@ -88,7 +97,13 @@ nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
   }
-  
+
+/* End Top Section */  
+
+
+/* Start Middle Section which includes sidebar header,
+apps cards, bio cards, base cards, and the spotlight
+section */
 
 .middle-outer-wrapper{
     border: 1px var(--atoll) solid;
@@ -216,6 +231,10 @@ header h2{
 .detail-content a, .detail-content p {
     color: var(--iron);
 }
+
+/* End middle section */
+
+/* Start Footer section which includes contact info */
 
 footer {
     display:flex;
