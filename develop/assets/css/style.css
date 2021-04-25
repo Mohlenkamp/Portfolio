@@ -1,0 +1,245 @@
+:root {
+
+    /* Pallet Colors - Blender 3 */
+    --silver-sand: #bbbdbe;
+    --java: #1ec8c8;
+    --bunker: #070b0e;
+    --corduroy: #585a5a;
+    --blue-dianne: #215953;
+    --outer-space: #2b2c2c;
+    --calypso: #307888;
+    --lochinvar: #278678;
+    --big-stone: #193a48;
+    --goblin: #41864b;
+    --black: #000000;
+    --iron: #e1e5e5;
+    --black-pearl: #08202b;
+    --atoll: #0d7265;
+    --turquoise: #27d7dd;
+    --robins-egg-blue: #0ac4c7;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--outer-space);
+  }
+  
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+/* This is the global wrapper for the whole page */
+
+  .outer-outer-wrapper{
+      max-width: 1441px;
+  }
+
+/* Note: Separating into 3 areas. Top Middle Footer
+Then, wrapping each twice to get the two tone border
+effects (if possible). */
+
+
+/* Starting Top Section which includes logo and nav */
+
+.top-outer-wrapper{
+    border: 1px var(--atoll) solid;
+    margin-bottom: 4px;
+    }  
+
+.top-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px var(--java) solid;
+    padding: 0;
+}
+
+.logo-wrapper{
+    width: 100px;
+    height: 98px;
+    border-right: 2px var(--java) solid;
+    
+}
+
+.logo-wrapper p{
+
+    color: var(--goblin);
+}
+
+.nav-wrapper {
+    justify-content: flex-end;
+    color: var(--calypso);
+    display: flex;
+    min-width: 50%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+nav ul li a {
+    padding: 10px 15px;
+    list-style: none;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+    color: var(--lochinvar);
+    text-shadow: 0 0 10px rgba(170, 34, 34, 0.5);
+  }
+  
+nav ul li a:hover {
+    color: var(--iron);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+/* End Top Section */  
+
+
+/* Start Middle Section which includes sidebar header,
+apps cards, bio cards, base cards, and the spotlight
+section */
+
+.middle-outer-wrapper{
+    border: 1px var(--atoll) solid;
+    margin-bottom: 4px;
+    } 
+
+.middle-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transform: rotate(-180deg);
+    justify-content: flex-start;
+    align-content: flex-end;
+    writing-mode: vertical-lr;
+    width:100px;
+    border: 1px var(--java) solid;
+    
+}
+
+header {
+margin: 0 0 50px 20px;
+}
+
+header h1{
+    margin-right: 10px;
+}
+
+header h2{
+    text-decoration: underline dotted;
+    text-decoration-style: var(--corduroy);
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px var(--atoll) solid;
+}
+
+.card-apps {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-card-title {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    border: 1px var(--java) solid;
+    width: 210px;
+}
+
+.menu-card-title h3{
+    display:flex;
+    border-left: 1px var(--java) solid;
+    border-right: 1px var(--java) solid;
+    color: var(--iron);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-card-details {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px var(--java) solid;
+    justify-content: center;
+    align-items: flex-start;
+   }
+
+.menu-card-details img{
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-card-details a{
+    width:210px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    color: var(--iron);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-card-details p{
+    width: 210px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--robins-egg-blue); 
+}
+
+#myavatar {
+    height: 194px;
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px var(--java) solid;
+    margin: 190px 24px 190px 45px;
+}
+
+.detail-content h3{
+    color: var(--iron);
+}
+
+.detail-content img{
+    height: 150px;
+    width: 400px;
+}
+
+.detail-content a, .detail-content p {
+    color: var(--iron);
+}
+
+/* End middle section */
+
+/* Start Footer section which includes contact info */
+
+footer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border: 2px var(--java) solid;
+}

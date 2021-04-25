@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <!-- Styled for 1440 x 800 desktop default -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Responsive layout for 768 ~ 1368 -->
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+    <!-- Responsive layout for less than 768px width-->
+    <link rel="stylesheet" href="./assets/css/style3.css" />
+    <title>Portfolio</title>
+</head>
+
+<!-- Version 0.9 because it's still not quite fully baked... Honestly,
+I think I could spend months getting this to be just right. Right now, 
+I need to not let perfection be the enemy of getting something deployed-->
+
+
+<body>
+    <div class="outer-outer-wrapper">
+        <!-- Top section with logo and nav -->
+        <div class="top-outer-wrapper">
+            <section class="top-wrapper">
+                <div class="logo-wrapper">
+                    <!-- not enough time to make logo right now-->
+                    <p>JM</p>
+                </div>
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#apps">Apps</a>
+                            </li>
+                            <li>
+                                <a href="#base">Base</a>
+                            </li>
+                            <li>
+                                <a href="#bio">Bio</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+        <!-- Middle section with sidebar header, cards, and spotlight -->
+        <div class="middle-outer-wrapper">
+            <section class="middle-wrapper">
+                <div class="header-wrapper">
+                    <header>
+                        <h1>
+                            My Personal Portfolio
+                        </h1>
+                        <h2>John Mohlenkamp</h2>
+                    </header>
+                </div>
+                <section class="main-content">
+                    <section class="menu-card-title">
+                        <h3 id="apps">APPS</h3>
+                        <section class="cards-apps">
+                            <section class="menu-card-details">
+                                <!-- Image / Link / Description -->
+                                <img src="./assets/images/RunBuddyCard.gif" alt="Run Buddy Icon" />
+                                <a href="https://mohlenkamp.github.io/run-buddy/">Run Buddy</a>
+                                <p>Website for gym including personal trainers for custom workouts</p>
+                            </section>
+                            <section class="menu-card-details">
+                                <img src="./assets/images/ExtreneFarmCard.jpg" alt="Extreme Farming Icon" />
+                                <a href="#">Extreme Farming</a>
+                                <p>Website for yelling at crops to make them grow faster</p>
+                            </section>
+                            <section class="menu-card-details">
+                                <img src="./assets/images/ReactorCard.jpg" alt="Reactor Control Icon" />
+                                <a href="#">Reactor Control Program</a>
+                                <p>Website for directly controlling the spaceship fusion reactor core</p>
+                            </section>
+                            <section class="menu-card-details">
+                                <img src="./assets/images/HoriseonCard.gif" alt="Horiseon Icon" />
+                                <a href="https://mohlenkamp.github.io/Horiseon/">Horiseon</a>
+                                <p>Website for marketing firm specializing in SEO, reputation management and social
+                                    media</p>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="menu-card-title">
+                        <h3 id="base">BASE</h3>
+                        <section class="cards-base">
+                            <section class="menu-card-details">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47264.0525706413!2d-86.80036994463407!3d36.15771647325709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864ec3213eb903d%3A0x7d3fb9d0a1e9daa0!2sNashville%2C%20TN!5e0!3m2!1sen!2sus!4v1619326975586!5m2!1sen!2sus"
+                                    width="206" height="160" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                                <br /><p>Nashville <br /><br />
+                                Latitude: 36° 09' 57.20" N
+                                    Longitude: -86° 47' 3.98" W</p>
+                            </section>
+                            <section class="menu-card-details">
+                               <iframe src="https://g1.ipcamlive.com/player/player.php?alias=broadwaycam"
+                                        alt="Live stream video of Nashville Lower Broadway" width="206px" height="158px"
+                                        frameborder="0" allowfullscreen=""
+                                        style="border: none; max-width: 100%; overflow: hidden;"></iframe>
+                                
+                               <br /><p>View of Lower Broadway<br/><br />
+                                Traffic cam courtesy of Big Time Boots</p>
+                            </section>
+                            <section class="menu-card-details">
+                                <iframe src="https://g1.ipcamlive.com/player/player.php?alias=lctowersouth"
+                                        alt="Live stream video of Nashville tower sky camera" width="206px"
+                                        height="158px" frameborder="0" allowfullscreen=""
+                                        style="border: none; max-width: 100%; overflow: hidden;"></iframe>
+                                <br /><p>Sky view from L&C Tower<br /><br />
+                                Sky cam courtesy of Fox 17</p>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="menu-card-title">
+                        <h3 id="bio">BIO</h3>
+                        <section class="cards-bio">
+                            <section class="menu-card-details">
+                                <img id="myavatar" src="./assets/images/myavatar.jpg"
+                                    alt="Me with a silly smile and needing a shave" />
+                                <a href="#">Me</a>
+                                <p>Overweight, over-caffinated, under-worked, but with a sense of humor and a lousy singing voice</p>
+                            </section>
+                            <section class="menu-card-details">
+                                <img src="./assets/images/GitHubCard.gif" alt="GitHub Icon">
+                                <a href="https://github.com/Mohlenkamp">GitHub Repo</a>
+                                <p>If you want to see some of my work</p>
+                            </section>
+                            <section class="menu-card-details">
+                                <img src="./assets/images/LinkedInCard.gif" alt="LinkedIn Icon" />
+                                <a href="https://www.linkedin.com/in/john-mohlenkamp-3418b98/">LinkedIn Page</a>
+                                <p>Because I don't like talking about myself.....</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            <!-- In the acceptance criteria, it said that I needed to make the first
+            application presented larger. I opted to create a spotlight portion to the side
+            of the other cards to achieve this goal.-->
+                <article class="detail-content">
+                    <h3>Application Spotlight</h3>
+                    <img src="./assets/images/HoriseonCard.gif" alt="Horiseon Icon" />
+                    <a href="https://mohlenkamp.github.io/Horiseon/">Horiseon</a>
+                    <p>Website for marketing firm specializing in SEO, reputation management and social
+                        media
+                    </p>
+                </article>
+            </section>
+        </div>
+        <!-- Footer section for contact info -->
+        <section class="bottom-wrapper">
+            <footer>
+                <h3>Contact</h3>
+                <section class="contact-info" id="contact">
+                    <a href="https://www.linkedin.com/in/john-mohlenkamp-3418b98/">LinkedIn</a><br />
+                    <p>&copy; 2022 Mohlenkamp, Inc. </p>
+                </section>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>
